@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Marketing Agency</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="text-section">
+            <h2 class="award">AWARD WINNING</h2>
+            <h1 class="title">DIGITAL MARKETING AGENCY</h1>
+            <p class="description">Morbi sed lacus nec risus finibus feugiat at fermentum nibh. Pellentesque vitae ante at elit fringilla ac at purus. Morbi sed lacus nec risus finibus feugiat at fermentum.</p>
+            <button class="contact-btn" id="open-form-btn">CONTACT US</button>
+        </div>
+        <div class="image-section">
+            <img src="image.png" alt="Woman working on a project">
+        </div>
+    </div>
+
+    <!-- Popup form -->
+    <div id="popup-form" class="popup-form">
+        <div class="form-container">
+            <h2>Talk to us</h2>
+            <form id="contact-form" action="https://getform.io/f/pbgxwnma" method="POST">
+                <label for="email">Work email*</label>
+                <input type="email" id="email" name="email" required>
+                <label for="first-name">First name*</label>
+                <input type="text" id="first-name" name="first-name" required>
+                <label for="last-name">Last name*</label>
+                <input type="text" id="last-name" name="last-name" required>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the terms and conditions, and provide consent to send me communication.</label>
+                </div>
+                <button type="submit" class="contact-btn">Contact Us</button>
+            </form>
+            <button class="close-btn" id="close-form-btn">&times;</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
