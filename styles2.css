@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.services-section {
+    text-align: center;
+    padding: 50px;
+}
+
+.slider-container {
+    overflow: hidden;
+    width: 70%;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 70%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.slide img {
+    width: 70%;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 10;
+}
+
+.overlay .content {
+    text-align: center;
+}
+
+.overlay a {
+    background: red;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.slide:hover .overlay {
+    opacity: 1;
+}
+
+.dots {
+    margin-top: 20px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: red;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.hello {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.hello h3 {
+    color: pink;
+    margin-bottom: 10px;
+}
+.h1-container {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+.h1-container h1 {
+    margin-right: 20px;
+}
+.additional-content {
+    font-size: 16px; /* Adjust the size as needed */
+    max-width: 60%; /* Optional: to control the width of the additional content */
+}
